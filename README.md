@@ -16,4 +16,4 @@ I'm [Pierre-Henry Soria](http://ph7.me) 😃 Author of this template 😉 (done 
 
 ## ⚖️ License
 
-[General Public License 3](http://www.gnu.org/licenses/gpl.html) or later.
+[GNU General Public License 3](http://www.gnu.org/licenses/gpl.html) or later.
