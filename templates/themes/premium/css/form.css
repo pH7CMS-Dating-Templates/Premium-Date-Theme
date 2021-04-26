@@ -1,6 +1,6 @@
 /*
  * Author:        Pierre-Henry Soria <ph7software@gmail.com>
- * Copyright:     (c) 2012-2019, Pierre-Henry Soria. All Rights Reserved.
+ * Copyright:     (c) 2012-2021, Pierre-Henry Soria. All Rights Reserved.
  * License:       GNU General Public License; See PH7.LICENSE.txt and PH7.COPYRIGHT.txt in the root directory.
  */
 
@@ -54,7 +54,7 @@ input:not([type=image]):not([type=range]), textarea, select {
     color: #3F3F3F;
     text-shadow: 0 1px 0 rgba(200, 200, 200, .6);
     box-shadow: 1px 1px 4px #aaa inset;
-    border-radius: 5px;
+    border-radius: 5px !important;
     transition: border linear 0.3s, box-shadow linear 0.3s;
     -webkit-transition: border linear 0.3s, box-shadow linear 0.3s;
     -moz-transition: border linear 0.3s, box-shadow linear 0.3s;
@@ -102,12 +102,8 @@ input:focus, textarea:focus {
     background-repeat: no-repeat;
 }
 
-input:focus:valid:not([type=submit]):not([type=radio]):not([type=file]):not([type=date]), textarea:focus:valid:not(.chatboxtextarea) {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAANkE3LLaAgAAAiZJREFUeJzVkk9IkwEchp9v+6bTmWYtLQU3NSnSwkyUAhFMsIQ6bC4vFVQmjA6DgiKCIsSLQUVEN+2WqBWClKBEWoIJm1NaBQvTliapC/f/259vXyclKoRu9Z7f5/D7vQ/8X7mI3vKg2WXrszm0pzJq/w6+QkFL9/l3bq9bmffPK532zjmdNbNZtV6woOYGeYDwG3wNg7Wy9dXZmtN7FvwLLAaXmFmZNgi5gSqBG2wxKLm2AyUlxzdnpBd22Yf20s6XNVZzVVN2psLyzFJlLpBiMip09L99yKOpx+9DSZrELJ1gu2yuvZ6TnodKpTDimTR/YuUugK5ds+9cmflFQ0WN3h/7hpxMpdd5j2H3mCsUoYFbfFVHKynNNyw25m3NRJeaiigquyYCnvvFTboTJw8d7qmrKNdHEmH8Uoi+qS5GZ+2jq0GO0MEygJpqltI3RayFu+dERYiwM1efHVB5ja2mugvlRcU5khzGH//Ok8keHO7ZiWWfcpQOfGsnCgDGOwxfslKfliIgkoYia0lR9MQlHbK0jSGHk3Gnd9ATTZq4ifTzf0WAYIDu1cWc+iLjDqIkSYg+wswgk8mI/SNvxmOjng/JY/Qh/zqQCCBFGLC7Er5GY3VWAhUxvITkIAMOJ69fhvs/t8VMgPInPdQAsTHC0kFpf8n2/FIpLhAKiww6phkaXno62xY1beTXujT629QUZPNcm0JcIyLOu7S9M21Sy0bwv5EfWrTcPhcTr2YAAAAASUVORK5CYII=');
-}
-
 input:focus:invalid:not([type=submit]):not([type=radio]):not([type=file]):not([type=date]), textarea:focus:invalid:not(.chatboxtextarea) {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAhFJREFUeNpi/P//PwMlgImBQsACY6xiZPQAUi1Q7vF/DAy5v4GMH1BFbBBam5GBIRjINALibWH//8+CGwBU3BJRUmL84/v3/zdPn5a8fuqUJdBzJjB5ILuTgY3N7fevX++AhvQChbaDxBlhYbCAkTENyErTNjeXVNTWlvr57dvvM/v23Xn96lUsPx9fjqiUlN2DGzeuAzVnszIwPATSDFFAvXAD5jMyMvxiYDAGOj0cyHUyd3RU4hEQ4L937dozdg4OhhsXL54DOjcdqPkFK8hmHAaA/fwXaBBQwUw9Q0N1BiYm9tvXrt36/v27DiPEK2AgDjUAHgaPENEiChSsVZKSkv7x8SPbradPbwjy8vJ/+/Pn0pffv/VAlvwB4lfo0fgDEpAgyRoFUVFTMWZmsWtPn97++PPnxPtv3pxlZ2XlAspt+4crHYAMAJqeLsHL663GxCT15NOnF29//lwIdPJcoMagR9++beVhYZEHstt+Q9SiGgD0t/xPBoZUaw4O+e+/fn098/HjeSB/zieg3D+Iy/Kf/PmzFmiREVCzI4YBQMW5hlxckjx//7Js/fTpPpBfD1T0HqYQakgd0IAzQDmPH9BEiGyAgw07u+SlX7/ePv/7dwdQ49nvQPHvEDm4IUCX1gD5r4De0ENJSNHApPwfkpTfMgPDAhhlD5BSIQNa4CkCxSSW/f9/nHHAcyNAgAEAxF3igbzwV7kAAAAASUVORK5CYII=');
+    border: solid 1px #d9534f;
 }
 
 .form_link, .form_link div[id^=pfbc-element-] {
@@ -124,7 +120,7 @@ input:focus:invalid:not([type=submit]):not([type=radio]):not([type=file]):not([t
     background: none;
     text-shadow: none;
     box-shadow: none;
-    border-radius: 0;
+    border-radius: 0 !important;
     transition: none;
     -webkit-transition: none;
     -moz-transition: none;
